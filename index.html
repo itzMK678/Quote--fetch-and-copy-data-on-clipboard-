@@ -21,7 +21,7 @@
       <div>
         <button onclick="getquote(api_url)">New</button>
         <button onclick="copy()">
-          <i class="fa-brands fa-twitter"></i>Tweet
+          <i class="fa-regular fa-copy"></i>Copy
         </button>
       </div>
     </div>
@@ -42,6 +42,8 @@
       author.innerHTML = data.author;
     }
     getquote(api_url);
+
+    // fetching api
     function copy() {
       const quoteText = quote.innerHTML;
       const authorText = author.innerHTML;
