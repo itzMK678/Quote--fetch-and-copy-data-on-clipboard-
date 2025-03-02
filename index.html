@@ -20,7 +20,7 @@
       <span id="author">Loading</span>
       <div>
         <button onclick="getquote(api_url)">New</button>
-        <button onclick="copy()">
+        <button onclick="Copy()">
           <i class="fa-regular fa-copy"></i>Copy
         </button>
       </div>
@@ -44,7 +44,7 @@
     getquote(api_url);
 
     // fetching api
-    function copy() {
+    function Copy() {
       const quoteText = quote.innerHTML;
       const authorText = author.innerHTML;
       const fullQuote = `${quoteText} - ${authorText}`;
